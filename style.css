@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	 font-family: "Quicksand", sans-serif;
+
+}
+ul {
+
+list-style: none;
+
+}
+a{
+	text-decoration: none;
+}
+ 
+ .container{
+ 	max-width: 1100px;
+ 	color: #e4b95b;
+ }
+
+
+
+
+ header .content h1 {
+	max-width: 90%;
+  }
+
+
+#navbar img{
+ width: 80px;
+ margin-left: 100px;
+}
+.primary-text{
+	color: #e4b95b;
+}
+
+
+.btn {
+	display: inline-block;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 15px;
+
+}
+ 
+ .btn-primary{
+ 	color: #fff;
+ 	border: 1px solid #fff;
+
+ }
+ /* Fix cut words on small screens */
+h1, h2, h3, p, a {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+  }
+ .btn-primary:hover ,
+ .btn-secondary:hover {
+ 	background: #e4b95b;
+ 	color: black;
+
+ }
+ #about img,
+.menu-item img {
+  transition: 0.4s;
+}
+
+#about img:hover,
+.menu-item img:hover {
+  transform: rotate(3deg) scale(1.05);
+}
+ 
+.btn-secondary{
+	color: #fff;
+	background: #383848;
+	margin-top: 2rem;
+}
+.btn {
+	transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+	transform: scale(1.05);
+  }
+
+header{
+	height: 100vh;
+	
+	background: url("./home_bg.jpeg") center center/cover no-repeat ;
+	position: relative;
+}
+#navbar {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+	display: flex;
+	margin-right: 100px;
+
+}
+#navbar ul li a{
+	padding: 25px 20px;
+	color: #fff;
+	font-weight: 600;
+
+}
+
+#navbar ul li a:hover {
+border-bottom: 2px solid #e4b95b;
+
+}
+header .content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 75vh;
+    
+}
+header .content h1{
+	font-size: 40px;
+	color: #fff;
+
+}
+header .content p{
+	margin: 20px 0 40px;
+	color :#fff;
+}
+header::before{
+	content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: rgb(0,0,0,0.6);
+
+}
+header *{
+	z-index: 10;
+}
+
+#about {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f4f4f4;
+}
+#about .title ,
+#offers .title ,
+#menu .title
+{
+	text-align: center;
+	margin-bottom: 4rem;
+
+}
+#about h2 ,
+#offers h2 ,
+#menu h2
+{
+	font-size: 40px;
+	
+	margin-bottom:20px;
+}
+#about h2 ,
+#menu h2
+{
+
+	color: #383848;
+}
+
+
+#about .title p ,
+#menu .title p
+{
+	font-size: 14px;
+	color: #9a9a9a;
+	font-weight: 600;
+
+}
+#about .about-content{
+	display: flex;
+	justify-content: space-between;
+
+}
+#about .about-content img{
+	width: 450px;
+
+}
+#about .about-content p{
+	color: #9a9a9a;
+	margin-right: 7rem;
+	font-weight: 500;
+	line-height: 1.6;
+
+}
+
+#offers{
+    height: 85vh;
+	display: flex;
+	justify-content: center;
+	background: url("./offer-background.jpg") center center/cover fixed;
+}
+
+#offers h2{
+	color: #e4b95b;
+
+}
+#offers .title p{
+	color: #fff;
+	font-weight: 500;
+}
+#offers .Offers-items{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: #fff;
+}
+#offers .Offers-items img{
+
+	width: 200px;
+}
+#offers .Offers-items h3{
+font-size: 25px;
+margin: 15px 0;
+
+
+}
+#offers .Offers-items p{
+font-size: 14px;
+padding: 0 20px;
+font-weight: 300;
+margin-bottom: 15px;
+
+}
+#offers .Offers-items span{
+	font-size: 18px;
+	font-weight: 600;
+	margin-left: 5px;
+}
+#menu{
+	background: #f4f4f4;
+	padding: 3rem 0;
+}
+#menu .menu-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#menu .menu-items .menu-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px;
+}
+
+ #menu .menu-items .menu-item img{
+	width: 90px;
+	border-radius: 50%;
+	margin-right: 20px;
+
+
+}
+#menu .menu-items .menu-item h3{
+	color: #383848;
+	border-bottom: 1px dashed #c2bdbd;
+	padding-bottom: 10px;
+	position: relative;
+
+}
+#menu .menu-items .menu-item span {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+#menu .menu-items .menu-item p{
+	margin-top:10px;
+}
+
+#menu .btn {
+	display: block;
+	margin:20px auto 0;
+	background:#e4b95b;
+	color: #fff;
+	cursor: pointer;
+
+}
+#menu .btn:hover {
+	background:#383848;
+}
+#daytime {
+color: #fff;
+	 background :url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+
+	 
+
+	 text-align: center;
+}
+#daytime .daytime-items{
+	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
+	height: 40vh;
+	color: #fff;
+}
+#daytime .daytime-items h3{
+	font-size: 32px;
+	margin: 20px 0 10px;
+color: #fff;
+}
+
+#contact {
+	padding: 5rem 10rem;
+	background: #f4f4f4;
+
+
+}
+#contact .container {
+	max-width: 900px;
+
+}
+#contact .contact-content {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+#contact .contact-content .contact-info{
+	width: 50%;
+
+}
+#contact .contact-content .contact-info div{
+	margin: 20px 0;
+	line-height: 1.7;
+}
+#contact .contact-content .contact-info h3{
+	font-size: 20px;
+	color: #383848;
+	margin-bottom: 10px;
+	color: black;
+}
+#contact .contact-content .contact-info p{
+	color:#9a9a9a;
+
+}
+/* #contact .contact-content .contact-info i{
+	color: #e4b95b;
+	margin-right: 30px;
+	font-weight: 700;
+} */
+/* #contact .contact-content .contact-info a i{
+	color: #fff;
+	background-color: #383848;
+	padding: 15px;
+	border-radius: 40%;
+	font-size:12px ;
+
+} */
+/* #contact .contact-content .contact-info a i:hover{
+	background-color: #e4b95b;
+	color: black;
+} */
+form{
+	width: 50%;
+
+}
+form input ,
+textarea{
+	display: block;
+	width: 100%;
+	padding: 20px 15px;
+	margin: 20px 0 ;
+	border: none;
+	background-color: #e3e2dd;
+}
+
+
+#contact .btn {
+	background: #e4b95b;
+	color: black;
+	cursor: pointer;
+}
+#contact .btn:hover {
+	background-color:#383848; 
+}
+/* Dark Mode Button */
+.dark-btn{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Sticky Navbar */
+  #navbar.sticky{
+    position: fixed;
+    width: 100%;
+    background: #383848;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+  
+  /* Fade Animation */
+  .fade-in{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.6s ease;
+  }
+  
+  .fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Success Message */
+  .success-message{
+    display: none;
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Dark Mode */
+  body.dark{
+    background:#111;
+    color:white;
+  }
+  
+  body.dark #about,
+  body.dark #menu,
+  body.dark #contact{
+    background:#1a1a1a;
+  }
+  
+  body.dark .title h2{
+    color:white;
+  }
+
+  .menu-item {
+	transition: 0.3s;
+	cursor: pointer;
+  }
+  
+  .menu-item:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+	background: #fff;
+	border-radius: 15px;
+	padding: 10px;
+  }
+  body.dark .menu-item:hover {
+	background: #222;
+  }
+  #scrollTopBtn{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background: #e4b95b;
+	color: black;
+	border: none;
+	padding: 12px 15px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: none;
+	z-index: 1000;
+	transition: 0.3s;
+  }
+  
+  #scrollTopBtn:hover{
+	background: #383848;
+	color: white;
+  }
+  /* ========================= */
+/* 📱 Responsive Design */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+	#about .about-content {
+	  flex-direction: column;
+	  text-align: center;
+	}
+  
+	#about .about-content img {
+	  width: 80%;
+	  margin-top: 20px;
+	}
+  
+	#menu .menu-items {
+	  flex-direction: column;
+	}
+  
+	#menu .menu-items .menu-item {
+	  margin: 20px 0;
+	}
+  
+	#contact .contact-content {
+	  flex-direction: column;
+	}
+  
+	#contact .contact-content .contact-info,
+	form {
+	  width: 100%;
+	}
+  
+	#contact {
+	  padding: 3rem 1.5rem;
+	}
+  
+	#daytime .daytime-items {
+	  flex-direction: column;
+	  height: auto;
+	  gap: 30px;
+	  padding: 40px 0;
+	}
+  
+	#offers .Offers-items {
+	  flex-direction: column;
+	  gap: 40px;
+	}
+  
+	#navbar {
+	  flex-direction: column;
+	}
+  
+	#navbar ul {
+	  margin: 10px 0;
+	}
+  
+  }
+  @media (max-width: 600px) {
+
+	header .content h1 {
+	  font-size: 26px;
+	}
+  
+	header .content p {
+	  font-size: 14px;
+	  padding: 0 10px;
+	}
+  
+	#navbar img {
+	  margin-left: 0;
+	}
+  
+	#navbar ul {
+	  margin-right: 0;
+	}
+  
+  }
+  /* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+	/* نشيل أي height ثابت */
+	#about,
+	#offers,
+	#daytime {
+	  height: auto;
+	  padding: 60px 0;
+	}
+  
+	#daytime .daytime-items {
+	  height: auto;
+	}
+  
+	/* about section */
+	#about .about-content {
+	  flex-direction: column;
+	  text-align: center;
+	}
+  
+	#about .about-content p {
+	  margin-right: 0;
+	}
+  
+	#about .about-content img {
+	  width: 90%;
+	  margin-top: 20px;
+	}
+  
+	/* offers */
+	#offers .Offers-items {
+	  flex-direction: column;
+	  gap: 30px;
+	}
+  
+	/* menu */
+	#menu .menu-items {
+	  flex-direction: column;
+	}
+  
+	#menu .menu-items .menu-item {
+	  margin: 20px 0;
+	}
+  
+	/* contact */
+	#contact {
+	  padding: 3rem 1rem;
+	}
+  
+	#contact .contact-content {
+	  flex-direction: column;
+	}
+  
+	#contact .contact-content .contact-info,
+	form {
+	  width: 100%;
+	}
+  
+  }
+
+  #contact .contact-content .contact-info a {
+	display: inline-block;
+	margin-right: 10px;
+  }
+  
+  #contact .contact-content .contact-info a i {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #383848;
+	color: white;
+	border-radius: 50%;
+	font-size: 16px;
+	transition: 0.3s;
+  }
+  
+  #contact .contact-content .contact-info a i:hover {
+	background: #e4b95b;
+	color: black;
+	transform: translateY(-5px);
+  }
+  /* ===== Scroll Animation ===== */
+.reveal {
+	opacity: 0;
+	transform: translateY(60px);
+	transition: 0.8s ease;
+  }
+  
+  .reveal.active {
+	opacity: 1;
+	transform: translateY(0);
+  }
+  .menu-filter {
+	text-align: center;
+	margin-bottom: 30px;
+  }
+  
+  .menu-filter button {
+	padding: 10px 20px;
+	margin: 5px;
+	border: none;
+	background: #e4b95b;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 15px;
+  }
+  
+  .menu-filter button:hover {
+	background: #383848;
+	color: white;
+  }
+  .cart-icon {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background: #e4b95b;
+	padding: 10px 15px;
+	border-radius: 20px;
+	font-weight: bold;
+	cursor: pointer;
+  }
+  .rating span {
+	font-size: 20px;
+	cursor: pointer;
+	color: gray;
+  }
+  
+  .rating span.active {
+	color: gold;
+  }
+  .modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+  }
+  
+  .modal-content {
+	background: #fff;
+	padding: 30px;
+	border-radius: 20px;
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+	animation: fadeIn 0.3s ease;
+  }
+  
+  .modal-content img {
+	width: 200px;
+	border-radius: 15px;
+	margin-bottom: 20px;
+  }
+  
+  .close-btn {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 28px;
+	cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+	from { transform: scale(0.7); opacity: 0; }
+	to { transform: scale(1); opacity: 1; }
+  }
+  .error {
+	color: red;
+	font-size: 13px;
+	margin-top: -15px;
+	margin-bottom: 10px;
+	display: block;
+  }
+  
+  .success-message {
+	color: green;
+	margin-top: 15px;
+	font-weight: 600;
+  }
+  
+  input.error-border,
+  textarea.error-border {
+	border: 2px solid red;
+  }
+  
+  input.success-border,
+  textarea.success-border {
+	border: 2px solid green;
+  }
+  
+  .char-count {
+	font-size: 12px;
+	color: #777;
+	display: block;
+	text-align: right;
+  }
+  /* Daytime Animation Base */
+.daytime-item {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: all 0.6s ease;
+  }
+  
+  /* لما يبين */
+  .daytime-item.show {
+	opacity: 1;
+	transform: translateY(0);
+  }
+  
+  /* Hover Effect */
+  .daytime-item:hover {
+	transform: translateY(-10px) scale(1.05);
+	transition: 0.3s ease;
+  }
+  
+  /* Icon Pulse */
+  .daytime-item img {
+	width: 80px;
+	animation: pulse 2.5s infinite;
+  }
+  
+  @keyframes pulse {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+  }
